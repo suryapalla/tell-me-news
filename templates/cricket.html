@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content%}
+    {% for item in mylist %}
+            <div class="well well-sm">
+                <a href="{{ item.3 }}" target="_blank"><h2><span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span> &nbsp {{ item.0 }}</h2></a>
+                <p>{{ item.1 }}</p>
+                <img src="{{ item.2 }}">
+		    </div>
+    {% endfor %}
+{% endblock %}
